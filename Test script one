@@ -1,0 +1,89 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("I hate Admin", "BloodTheme")
+local Tab = Window:NewTab("buft unit / spam skill")
+local Section = Tab:NewSection("only friends ^^ need improved titan speaker")
+Section:NewToggle("need upgrade titan you 3", "i hate admin", function(state)
+    if state then
+        _G.auto = true
+while _G.auto do wait(0.1)
+local args = {
+    [1] = workspace:WaitForChild("Towers"):WaitForChild("Improved Titan Speakerman 3")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("AbilityActivated"):FireServer(unpack(args))
+end
+    else
+        _G.auto = true
+while _G.auto do wait(0.1)
+local args = {
+    [1] = workspace:WaitForChild("Towers"):WaitForChild("Improved Titan Speakerman 3")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("AbilityActivated"):FireServer(unpack(args))
+end
+    end
+end)
+Section:NewToggle("need upgrade 4", "nothing", function(state)
+    if state then
+        _G.auto = true
+while _G.auto do wait(0.1)
+local args = {
+    [1] = workspace:WaitForChild("Towers"):WaitForChild("Improved Titan Speakerman 4")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("AbilityActivated"):FireServer(unpack(args))
+end
+    else
+        _G.auto = false
+while _G.auto do wait(0.1)
+local args = {
+    [1] = workspace:WaitForChild("Towers"):WaitForChild("Improved Titan Speakerman 4")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("AbilityActivated"):FireServer(unpack(args))
+end
+    end
+end)
+Section:NewToggle("Upgrade 5", "idk", function(state)
+    if state then
+        _G.auto = true
+while _G.auto do wait(0.1)
+local args = {
+    [1] = workspace:WaitForChild("Towers"):WaitForChild("Improved Titan Speakerman 4")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("AbilityActivated"):FireServer(unpack(args))
+end
+    else
+        _G.auto = false
+while _G.auto do wait(0.1)
+local args = {
+    [1] = workspace:WaitForChild("Towers"):WaitForChild("Improved Titan Speakerman 4")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("AbilityActivated"):FireServer(unpack(args))
+end
+    end
+end)
+local Tab = Window:NewTab("Put unit for free ")
+local Section = Tab:NewSection("for You dont have unit")
+Section:NewButton("Secert agent", "Pppppp", function()
+    local function getHeadPosition() local player = game.Players.LocalPlayer local character = player.Character if character then local humanoid = character:FindFirstChild("Humanoid") if humanoid then local head = character:FindFirstChild("Head") if head then return head.Position end end end return nil end
+ 
+local headPosition = getHeadPosition() if headPosition then local A_1 = "Secret Agent" local A_2 = CFrame.new(headPosition) local Event = game:GetService("ReplicatedStorage").Functions.SpawnTower Event:InvokeServer(A_1, A_2) end
+end)
+Section:NewButton("Dark speaker", "ppppppp", function()
+    local function getHeadPosition() local player = game.Players.LocalPlayer local character = player.Character if character then local humanoid = character:FindFirstChild("Humanoid") if humanoid then local head = character:FindFirstChild("Head") if head then return head.Position end end end return nil end
+ 
+local headPosition = getHeadPosition() if headPosition then local A_1 = "Dark Speakerman" local A_2 = CFrame.new(headPosition) local Event = game:GetService("ReplicatedStorage").Functions.SpawnTower Event:InvokeServer(A_1, A_2) end
+end)
+Section:NewButton("Freeze cam", "K", function()
+    local function getHeadPosition() local player = game.Players.LocalPlayer local character = player.Character if character then local humanoid = character:FindFirstChild("Humanoid") if humanoid then local head = character:FindFirstChild("Head") if head then return head.Position end end end return nil end
+ 
+local headPosition = getHeadPosition() if headPosition then local A_1 = "Freezer Cameraman" local A_2 = CFrame.new(headPosition) local Event = game:GetService("ReplicatedStorage").Functions.SpawnTower Event:InvokeServer(A_1, A_2) end
+end)
+Section:NewButton("Builder Cameraman", "idc", function()
+    local function getHeadPosition() local player = game.Players.LocalPlayer local character = player.Character if character then local humanoid = character:FindFirstChild("Humanoid") if humanoid then local head = character:FindFirstChild("Head") if head then return head.Position end end end return nil end
+ 
+local headPosition = getHeadPosition() if headPosition then local A_1 = "Builder Cameraman" local A_2 = CFrame.new(headPosition) local Event = game:GetService("ReplicatedStorage").Functions.SpawnTower Event:InvokeServer(A_1, A_2) end
+end)
