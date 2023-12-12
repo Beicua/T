@@ -1,4 +1,4 @@
-_G.auto = true
+_G.auto = false
 while _G.auto do wait(0.1)
    game:GetService("ReplicatedStorage").OtherThing.DesertFish:FireServer(game:GetService("Players").LocalPlayer)
    game:GetService("ReplicatedStorage").OtherThing.VolcanoFish:FireServer(game:GetService("Players").LocalPlayer)
