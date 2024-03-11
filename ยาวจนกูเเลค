@@ -1,0 +1,930 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("dupe skill", "Ocean")
+local Tab = Window:NewTab("Dupe")
+local Section = Tab:NewSection("use skill")
+Section:NewButton("Mega dupe", "kuy", function()
+    local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+local args = {
+    [1] = "Activated",
+    [2] = {
+        ["Target"] = workspace:WaitForChild("Map"):WaitForChild("City"):WaitForChild("Folder"):WaitForChild("Toilet"):WaitForChild("Floor"),
+        ["Hit"] = CFrame.new(-2485.982177734375, 35.7530403137207, -749.041015625, -0.7813637852668762, 0.3123382329940796, -0.5402920246124268, 1.4901161193847656e-08, 0.8657474517822266, 0.5004811882972717, 0.6240758895874023, 0.3910578787326813, -0.6764636635780334),
+        ["UnitRay"] = Ray.new(Vector3.new(-2572.21484375, 115.63081359863281, -857.0090942382812), Vector3.new(0.540289044380188, -0.5004729628562927, 0.6764722466468811))
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Network"):WaitForChild("Remotes"):WaitForChild("Events"):WaitForChild("Tools"):FireServer(unpack(args))
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ 
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Open"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 28.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+ 
+local Corner = Instance.new("UICorner")
+Corner.Name = "Corner"
+Corner.Parent = Toggle
