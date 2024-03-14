@@ -445,8 +445,8 @@ end
 end
 end
 end
-end
 end)
+end
     else
         _G.bringmob = false
 while _G.bringmob do wait()
