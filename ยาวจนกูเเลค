@@ -286,7 +286,7 @@ end)
 Section:NewButton("tp1", "n", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
 end)
-Section:NewToggle("anti speaker Mob", "Kill", function(state)
+Section:NewToggle("Speaker", "M", function(state)
     if state then
         _G.bringmob = true
 while _G.bringmob do wait()
@@ -351,7 +351,7 @@ end)
 end
     end
 end)
-Section:NewToggle("Cam", "kill", function(state)
+Section:NewToggle("Cam", "M", function(state)
     if state then
         _G.bringmob = true
 while _G.bringmob do wait()
@@ -384,7 +384,7 @@ end
 end)
 end
     else
-        _G.bringmob = true
+        _G.bringmob = false
 while _G.bringmob do wait()
     pcall(function()
 for i,v in pairs(game:GetService("Workspace").Live:GetChildren()) do
@@ -414,39 +414,9 @@ end
 end
 end)
 end
-end)
-_G.bringmob = false
-while _G.bringmob do wait()
-    pcall(function()
-for i,v in pairs(game:GetService("Workspace").Live:GetChildren()) do
-for x,y in pairs(game:GetService("Workspace").Live:GetChildren()) do
-if v.Name == "Cameraman" then
-    if y.Name == "Cameraman" then
-   v.HumanoidRootPart.CFrame = y.HumanoidRootPart.CFrame
-   v.HumanoidRootPart.Size = Vector3.new(60,60,60)
-   y.HumanoidRootPart.Size = Vector3.new(60,60,60)
-   v.HumanoidRootPart.Transparency = 1
-   v.HumanoidRootPart.CanCollide = false
-   y.HumanoidRootPart.CanCollide = false
-   v.Humanoid.WalkSpeed = 0
-   y.Humanoid.WalkSpeed = 0
-   v.Humanoid.JumpPower = 0
-   y.Humanoid.JumpPower = 0
-   y.Humanoid.PlatformStand = true
-   v.Humanoid.PlatformStand = true
-   y.Humanoid.Health = 0
-   v.Humanoid.Health = 0
-   if sethiddenproperty then
-     sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
-end
-end
-end
-end
-end
-end)
     end
 end)
-Section:NewToggle("Bigcsm", "kill", function(state)
+Section:NewToggle("Big", "M", function(state)
     if state then
         _G.bringmob = true
 while _G.bringmob do wait()
@@ -505,11 +475,10 @@ end
 end
 end
 end
-end
 end)
+end
     end
 end)
-
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "ScreenGui"
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
