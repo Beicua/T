@@ -1,0 +1,11 @@
+workspace.ggggggggxfbus.Humanoid.WalkSpeed = 500
+for i = 1, 20 do 
+task.spawn(function() 
+local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.Character.VenomDagger:FindFirstChild("SKILL C MODE").RemoteEvent:FireServer(unpack(args))
+
+end) 
+end
