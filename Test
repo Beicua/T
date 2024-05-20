@@ -10,4 +10,4 @@ game:GetService("Players").LocalPlayer.Character.VenomDagger:FindFirstChild("SKI
 end) 
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/wynerdV2.lua",true))()
-https://flux.li/android/external/start.php?HWID=5776405a98d5893723e3336c87812c1f5862622307e2470e0c162a74edb9399dd906133b8fec1e80a83a3f70d9f0e2cd
+bcf626372cc8e0f73c7010b1f08685fa
