@@ -1,9 +1,1 @@
-https://mega.nz/file/5yc2nBaB#LN2nPBQsjtEeX_wCc-vonMHlKisor9d23cAzbwY5EfI
-key
-FREE_10f9d60cb97cea20b8b961c9123a0d60
-https://www.mediafire.com/file/dunu96t39zfcj0n/Delta-2.687.816.apk/file
-getgenv().WebhookURL = "" --If not used do not write anything 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/Farm%20Diamond%20v2.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rezexis/Main-Lua/refs/heads/main/Loader.lua"))()
-https://www.mediafire.com/file/70tmw5t54p15iru/Delta-2.689.880.apk/file
-https://thunderhubpro.netlify.app/
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
