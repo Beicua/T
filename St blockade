@@ -1,0 +1,166 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/natoloe009/0079igo97rgiiyr7ub/refs/heads/main/ORION_KAGA_MODIFY.txt'),true))()
+local Window = OrionLib:MakeWindow({
+    Name = "นักวิทยาศาสตร์", 
+    HidePremium = false, 
+    SaveConfig = true, 
+    IntroEnabled = false, 
+    ConfigFolder = "YourConfig",
+    IntroText = "Intro Text",
+    IntroIcon = "rbxassetid://",
+    Icon = "rbxassetid://",
+    CloseCallback = function() end
+})
+local Tab = Window:MakeTab({
+    Name = "free skill",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+local Section = Tab:AddSection({
+    Name = "Skill"
+})
+local Button = Tab:AddButton({
+    Name = "spider",
+    Callback = function()
+        -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local StratagemsHandler = ReplicatedStorage.StratagemsHandler -- RemoteEvent 
+
+StratagemsHandler:FireServer(
+    {
+        "ChangeOrb",
+        "Spider"
+    }
+)
+    end    
+})
+local Button = Tab:AddButton({
+    Name = "OrbitalLaser",
+    Callback = function()
+        -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local StratagemsHandler = ReplicatedStorage.StratagemsHandler -- RemoteEvent 
+
+StratagemsHandler:FireServer(
+    {
+        "ChangeOrb",
+        "OrbitalLaser"
+    }
+)
+
+    end    
+})
+local Button = Tab:AddButton({
+    Name = "Eagle500kgBomb!",
+    Callback = function()
+        -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local StratagemsHandler = ReplicatedStorage.StratagemsHandler -- RemoteEvent 
+
+StratagemsHandler:FireServer(
+    {
+        "ChangeOrb",
+        "Eagle500kgBomb"
+    }
+)
+
+    end    
+})
+local Button = Tab:AddButton({
+    Name = "OrbitalPrecisionStrike!",
+    Callback = function()
+        -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local StratagemsHandler = ReplicatedStorage.StratagemsHandler -- RemoteEvent 
+
+StratagemsHandler:FireServer(
+    {
+        "ChangeOrb",
+        "OrbitalPrecisionStrike"
+    }
+)
+
+    end    
+})
+local Button = Tab:AddButton({
+    Name = "Gundam!",
+    Callback = function()
+        -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local StratagemsHandler = ReplicatedStorage.StratagemsHandler -- RemoteEvent 
+
+StratagemsHandler:FireServer(
+    {
+        "ChangeOrb",
+        "Gundam"
+    }
+)
+
+    end    
+})
+local Button = Tab:AddButton({
+    Name = "UPGGundam!",
+    Callback = function()
+                -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local StratagemsHandler = ReplicatedStorage.StratagemsHandler -- RemoteEvent 
+
+StratagemsHandler:FireServer(
+    {
+        "ChangeOrb",
+        "UPGGundam"
+    }
+)
+
+    end    
+})
+local Button = Tab:AddButton({
+    Name = "Healer Drone!",
+    Callback = function()
+                -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local SkillTrees = ReplicatedStorage.SkillTrees -- RemoteEvent 
+
+SkillTrees:FireServer(
+    "Healer Drone"
+)
+
+    end    
+})
+local Button = Tab:AddButton({
+    Name = "Large tank!",
+    Callback = function()
+               -- Generated with Sigma Spy Github: https://github.com/depthso/Sigma-Spy
+-- Services
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Remote
+local SkillTrees = ReplicatedStorage.SkillTrees -- RemoteEvent 
+
+SkillTrees:FireServer(
+    "Large Blaster Tank"
+)
+
+    end    
+})
+
