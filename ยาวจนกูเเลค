@@ -45,3 +45,135 @@ if target and target.Character then
 end
 
 end)
+Section:NewButton("ใช้ SpinSlash ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+
+if not selectedPlayer then  
+    warn("ยังไม่ได้เลือกผู้เล่น")  
+    return  
+end  
+
+local target = Players:FindFirstChild(selectedPlayer)  
+
+if target and target.Character then  
+
+    local args = {  
+        "SpinSlash",  
+        target.Character,  
+        "AttackTitan",  
+        target.Name,  
+    }  
+
+    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
+end
+
+end)
+Section:NewButton("ใช้ Berserk ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+
+if not selectedPlayer then  
+    warn("ยังไม่ได้เลือกผู้เล่น")  
+    return  
+end  
+
+local target = Players:FindFirstChild(selectedPlayer)  
+
+if target and target.Character then  
+
+    local args = {  
+        "Berserk",  
+        target.Character,  
+        "AttackTitan",  
+        target.Name,  
+    }  
+
+    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
+end
+
+end)
+Section:NewButton("ใช้ Roar ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+
+if not selectedPlayer then  
+    warn("ยังไม่ได้เลือกผู้เล่น")  
+    return  
+end  
+
+local target = Players:FindFirstChild(selectedPlayer)  
+
+if target and target.Character then  
+
+    local args = {  
+        "Roar",  
+        target.Character,  
+        "AttackTitan",  
+        target.Name,  
+    }  
+
+    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
+end
+
+end)
+Section:NewButton("ใช้ GroundSpikes ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+
+if not selectedPlayer then  
+    warn("ยังไม่ได้เลือกผู้เล่น")  
+    return  
+end  
+
+local target = Players:FindFirstChild(selectedPlayer)  
+
+if target and target.Character then  
+
+    local args = {  
+        "GroundSpikes",  
+        target.Character,  
+        "WarhammerTitan",  
+        target.Name,  
+    }  
+
+    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
+end
+
+end)
+Section:NewButton("ใช้ Heal ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+
+if not selectedPlayer then  
+    warn("ยังไม่ได้เลือกผู้เล่น")  
+    return  
+end  
+
+local target = Players:FindFirstChild(selectedPlayer)  
+
+if target and target.Character then  
+
+    local args = {  
+        "Heal",  
+        target.Character,  
+        "AttackTitan",  
+        target.Name,  
+    }  
+
+    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
+end
+
+end)
+Section:NewButton("ใช้ mindless ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+
+if not selectedPlayer then  
+    warn("ยังไม่ได้เลือกผู้เล่น")  
+    return  
+end  
+
+local target = Players:FindFirstChild(selectedPlayer)  
+
+if target and target.Character then  
+
+    local args = {  
+        "Shift",  
+        target.Character,  
+        "MindlessTitan",  
+        target.Name,  
+    }  
+
+    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
+end
+
+end)
