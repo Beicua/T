@@ -155,7 +155,7 @@ if target and target.Character then
 end
 
 end)
-Section:NewButton("ใช้ MindlessSpawn ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+Section:NewButton("ใช้ Unshift ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
 
 if not selectedPlayer then  
     warn("ยังไม่ได้เลือกผู้เล่น")  
@@ -167,7 +167,7 @@ local target = Players:FindFirstChild(selectedPlayer)
 if target and target.Character then  
 
     local args = {  
-        "MindlessSpawn",  
+        "Unshift",  
         target.Character,  
         "AttackTitan",  
         target.Name,  
