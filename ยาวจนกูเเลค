@@ -168,7 +168,7 @@ if targetPlayer and targetPlayer.Character then
 
     local args = {  
         "Shift",  
-        targetPlayer.Character,  
+        target.Character,  
         "MindlessTitan",  
         1,  
     }  
