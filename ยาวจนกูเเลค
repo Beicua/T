@@ -162,15 +162,15 @@ if not selectedPlayer then
     return  
 end  
 
-local target = Players:FindFirstChild(selectedPlayer)  
+local targetPlayer = Players:FindFirstChild(selectedPlayer)  
 
-if target and target.Character then  
+if targetPlayer and targetPlayer.Character then  
 
     local args = {  
         "Shift",  
-        target.Character,  
+        targetPlayer.Character,  
         "MindlessTitan",  
-        target.Name,  
+        1,  
     }  
 
     game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
