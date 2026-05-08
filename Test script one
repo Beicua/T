@@ -95,3 +95,12 @@ end)
 Section:NewButton("Hockey", "Test", function()
 workspace.qoexjsz.FormValue.Value = "Hockey"
 end)
+Section:NewButton("Berserk", "Test", function()
+local args = {
+	[1] = "Berserk",
+	[2] = workspace.qoexjsz,
+	[3] = "AttackTitan",
+	[4] = "Michael",
+}
+game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+end)
