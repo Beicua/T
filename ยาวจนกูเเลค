@@ -155,23 +155,22 @@ if target and target.Character then
 end
 
 end)
-Section:NewButton("ใช้ mindless ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+Section:NewButton("ใช้ MindlessSpawn ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
 
 if not selectedPlayer then  
     warn("ยังไม่ได้เลือกผู้เล่น")  
     return  
 end  
 
-local targetPlayer = Players:FindFirstChild(selectedPlayer)  
+local target = Players:FindFirstChild(selectedPlayer)  
 
-if targetPlayer and targetPlayer.Character then  
+if target and target.Character then  
 
     local args = {  
-        "Shift",  
+        "MindlessSpawn",  
         target.Character,  
-        "MindlessTitan",
-        target.Name,
-        1,  
+        "AttackTitan",  
+        target.Name,  
     }  
 
     game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
