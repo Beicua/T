@@ -243,3 +243,26 @@ if target and target.Character then
 end
 
 end)
+Section:NewButton("ใช้ Stomp ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
+
+if not selectedPlayer then  
+    warn("ยังไม่ได้เลือกผู้เล่น")  
+    return  
+end  
+
+local target = Players:FindFirstChild(selectedPlayer)  
+
+if target and target.Character then  
+
+    local args = {  
+        "Stomp",  
+        target.Character,  
+        "WarhammerTitan",  
+        target.Name,  
+    }  
+
+    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))  
+end
+
+end)
+
