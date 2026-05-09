@@ -1,8 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
 
-local Window = Library.CreateLib("Demo UI", "DarkTheme")
+local Window = Library.CreateLib("Control Player UI", "DarkTheme")
 local Tab = Window:NewTab("Main")
-local Section = Tab:NewSection("System")
+local Section = Tab:NewSection("Control")
 local Players = game:GetService("Players")
 local selectedPlayer = nil
 local function GetPlayersList()
