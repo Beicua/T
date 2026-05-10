@@ -1,11 +1,22 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
-
-local Window = Library.CreateLib("Control Player UI", "BloodTheme")
-local Tab = Window:NewTab("Main")
-local Section = Tab:NewSection("Control")
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Players = game:GetService("Players")
 local selectedPlayer = nil
+
+local Window = Fluent:CreateWindow({
+    Title = "Control Ui",
+    SubTitle = "Ymir UI",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(620, 500),
+    Acrylic = true,
+    Theme = "Darker",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+
+local Tabs = {
+    Main = Window:AddTab({ Title = "Choose User" }),
+    Skills = Window:AddTab({ Title = "Skills" })
+}
 
 local function GetPlayersList()
     local list = {"qoexjsz"}
@@ -19,23 +30,31 @@ local function GetPlayersList()
     return list
 end
 
--- Dropdown
-local Dropdown = Section:NewDropdown(
-    "เลือกผู้เล่น",
-    "เลือกเป้าหมาย",
-    GetPlayersList(),
-    function(option)
-        selectedPlayer = option
-        print("เลือก:", selectedPlayer)
-    end
-)
+local Dropdown = Tabs.Main:AddDropdown("PlayerSelect", {
+    Title = "เลือกผู้เล่น",
+    Values = GetPlayersList(),
+    Multi = false,
+    Default = 1
+})
 
--- ปุ่มรีชื่อ
-Section:NewButton("รีชื่อผู้เล่น", "รีเฟรชรายชื่อ", function()
-    Dropdown:Refresh(GetPlayersList())
+Dropdown:OnChanged(function(Value)
+    selectedPlayer = Value
+    print("เลือก:", selectedPlayer)
 end)
 
--- ฟังก์ชันใช้สกิล
+Tabs.Main:AddButton({
+    Title = "รีชื่อผู้เล่น",
+    Callback = function()
+        Dropdown:SetValues(GetPlayersList())
+
+        Fluent:Notify({
+            Title = "System",
+            Content = "รีเฟรชรายชื่อแล้ว",
+            Duration = 3
+        })
+    end
+})
+
 local function UseSkill(skill, titanType)
 
     if not selectedPlayer then
@@ -43,7 +62,6 @@ local function UseSkill(skill, titanType)
         return
     end
 
-    -- ยิงทุกคน
     if selectedPlayer == "qoexjsz" then
 
         for _, target in pairs(Players:GetPlayers()) do
@@ -64,7 +82,6 @@ local function UseSkill(skill, titanType)
         return
     end
 
-    -- ยิงคนเดียว
     local target = Players:FindFirstChild(selectedPlayer)
 
     if target and target.Character then
@@ -80,46 +97,85 @@ local function UseSkill(skill, titanType)
     end
 end
 
-Section:NewButton("ใช้ Tackle", "", function()
-    UseSkill("Tackle", "AttackTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "Tackle",
+    Callback = function()
+        UseSkill("Tackle", "AttackTitan")
+    end
+})
 
-Section:NewButton("ใช้ SpinSlash", "", function()
-    UseSkill("SpinSlash", "AttackTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "SpinSlash",
+    Callback = function()
+        UseSkill("SpinSlash", "AttackTitan")
+    end
+})
 
-Section:NewButton("ใช้ Berserk", "", function()
-    UseSkill("Berserk", "AttackTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "Berserk",
+    Callback = function()
+        UseSkill("Berserk", "AttackTitan")
+    end
+})
 
-Section:NewButton("ใช้ Roar", "", function()
-    UseSkill("Roar", "AttackTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "Roar",
+    Callback = function()
+        UseSkill("Roar", "AttackTitan")
+    end
+})
 
-Section:NewButton("ใช้ GroundSpikes", "", function()
-    UseSkill("GroundSpikes", "WarhammerTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "GroundSpikes",
+    Callback = function()
+        UseSkill("GroundSpikes", "WarhammerTitan")
+    end
+})
 
-Section:NewButton("ใช้ Heal", "", function()
-    UseSkill("Heal", "AttackTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "Heal",
+    Callback = function()
+        UseSkill("Heal", "AttackTitan")
+    end
+})
 
-Section:NewButton("ใช้ StackSteam", "", function()
-    UseSkill("StackSteam", "AttackTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "StackSteam",
+    Callback = function()
+        UseSkill("StackSteam", "AttackTitan")
+    end
+})
 
-Section:NewButton("ใช้ Hardening", "", function()
-    UseSkill("Hardening", "AttackTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "Hardening",
+    Callback = function()
+        UseSkill("Hardening", "AttackTitan")
+    end
+})
 
-Section:NewButton("ใช้ RockThrow", "", function()
-    UseSkill("RockThrow", "BeastTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "RockThrow",
+    Callback = function()
+        UseSkill("RockThrow", "BeastTitan")
+    end
+})
 
-Section:NewButton("ใช้ LongRangedGroundSpike", "", function()
-    UseSkill("LongRangedGroundSpike", "WarhammerTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "LongRangedGroundSpike",
+    Callback = function()
+        UseSkill("LongRangedGroundSpike", "WarhammerTitan")
+    end
+})
 
-Section:NewButton("ใช้ Stomp", "", function()
-    UseSkill("Stomp", "WarhammerTitan")
-end)
+Tabs.Skills:AddButton({
+    Title = "Stomp",
+    Callback = function()
+        UseSkill("Stomp", "WarhammerTitan")
+    end
+})
+
+Fluent:Notify({
+    Title = "OVERKILL HUB",
+    Content = "Loaded Successfully",
+    Duration = 5
+})
