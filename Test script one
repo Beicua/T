@@ -104,3 +104,21 @@ local args = {
 }
 game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
 end)
+Section:NewButton("Stomp", "Test", function()
+local args = {
+	[1] = "Stomp",
+	[2] = workspace.qoexjsz,
+	[3] = "AttackTitan",
+	[4] = "Michael",
+}
+game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+end)
+Section:NewButton("RockThrow", "Test", function()
+local args = {
+	[1] = "RockThrow",
+	[2] = workspace.qoexjsz,
+	[3] = "AttackTitan",
+	[4] = "Michael",
+}
+game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+end)
