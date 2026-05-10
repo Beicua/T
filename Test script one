@@ -8,7 +8,7 @@ local Players = game:GetService("Players")
 local selectedPlayer = nil
 
 local function GetPlayersList()
-    local list = {"All"}
+    local list = {"qoexjsz"}
 
     for _, p in pairs(Players:GetPlayers()) do
         if p ~= Players.LocalPlayer then
@@ -44,7 +44,7 @@ local function UseSkill(skill, titanType)
     end
 
     -- ยิงทุกคน
-    if selectedPlayer == "All" then
+    if selectedPlayer == "qoexjsz" then
 
         for _, target in pairs(Players:GetPlayers()) do
 
