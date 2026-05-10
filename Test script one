@@ -8,7 +8,7 @@ local Players = game:GetService("Players")
 local selectedPlayer = nil
 
 local function GetPlayersList()
-    local list = {}
+    local list = {"All"}
 
     for _, p in pairs(Players:GetPlayers()) do
         if p ~= Players.LocalPlayer then
@@ -37,14 +37,38 @@ end)
 
 -- ฟังก์ชันใช้สกิล
 local function UseSkill(skill, titanType)
+
     if not selectedPlayer then
         warn("ยังไม่ได้เลือกผู้เล่น")
         return
     end
 
+    -- ยิงทุกคน
+    if selectedPlayer == "All" then
+
+        for _, target in pairs(Players:GetPlayers()) do
+
+            if target ~= Players.LocalPlayer and target.Character then
+
+                local args = {
+                    skill,
+                    target.Character,
+                    titanType,
+                    target.Name,
+                }
+
+                game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+            end
+        end
+
+        return
+    end
+
+    -- ยิงคนเดียว
     local target = Players:FindFirstChild(selectedPlayer)
 
     if target and target.Character then
+
         local args = {
             skill,
             target.Character,
