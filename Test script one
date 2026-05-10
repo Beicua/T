@@ -1,124 +1,101 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
 
-local Window = Library.CreateLib("ttsg", "DarkTheme")
+local Window = Library.CreateLib("Control Player UI", "DarkTheme")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Control")
 
-local Tab = Window:NewTab("1")
+local Players = game:GetService("Players")
+local selectedPlayer = nil
 
-local Section = Tab:NewSection("gu")
+local function GetPlayersList()
+    local list = {}
 
-Section:NewLabel("gugugaga")
-Section:NewButton("Michael", "Test", function()
-workspace.qoexjsz.FormValue.Value = "Michael"
+    for _, p in pairs(Players:GetPlayers()) do
+        if p ~= Players.LocalPlayer then
+            table.insert(list, p.Name)
+        end
+    end
+
+    return list
+end
+
+-- Dropdown
+local Dropdown = Section:NewDropdown(
+    "เลือกผู้เล่น",
+    "เลือกเป้าหมาย",
+    GetPlayersList(),
+    function(option)
+        selectedPlayer = option
+        print("เลือก:", selectedPlayer)
+    end
+)
+
+-- ปุ่มรีชื่อ
+Section:NewButton("รีชื่อผู้เล่น", "รีเฟรชรายชื่อ", function()
+    Dropdown:Refresh(GetPlayersList())
 end)
-Section:NewButton("tackle", "Test", function()
-local args = {
-	[1] = "Tackle",
-	[2] = workspace.qoexjsz,
-	[3] = "AttackTitan",
-	[4] = "Michael",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+-- ฟังก์ชันใช้สกิล
+local function UseSkill(skill, titanType)
+    if not selectedPlayer then
+        warn("ยังไม่ได้เลือกผู้เล่น")
+        return
+    end
+
+    local target = Players:FindFirstChild(selectedPlayer)
+
+    if target and target.Character then
+        local args = {
+            skill,
+            target.Character,
+            titanType,
+            target.Name,
+        }
+
+        game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+    end
+end
+
+Section:NewButton("ใช้ Tackle", "", function()
+    UseSkill("Tackle", "AttackTitan")
 end)
-Section:NewButton("heal", "Test", function()
-local args = {
-    [1] = "Heal",
-    [2] = workspace.qoexjsz,
-    [3] = "AttackTitan",
-    [4] = "ErenY",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ SpinSlash", "", function()
+    UseSkill("SpinSlash", "AttackTitan")
 end)
-Section:NewButton("hard", "Test", function()
-local args = {
-    [1] = "Hardening",
-    [2] = workspace.qoexjsz,
-    [3] = "AttackTitan",
-    [4] = "ErenY",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ Berserk", "", function()
+    UseSkill("Berserk", "AttackTitan")
 end)
-Section:NewButton("Spike", "Test", function()
-local args = {
-	[1] = "LongRangedGroundSpike",
-	[2] = workspace.qoexjsz,
-	[3] = "WarhammerTitan",
-	[4] = "Ghost",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
-wait(1)
-local args = {
-	[1] = "LongRangedGroundSpike",
-	[2] = workspace.qoexjsz,
-	[3] = "WarhammerTitan",
-	[4] = "Ghost",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
-wait(1)
-local args = {
-	[1] = "LongRangedGroundSpike",
-	[2] = workspace.qoexjsz,
-	[3] = "WarhammerTitan",
-	[4] = "Ghost",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ Roar", "", function()
+    UseSkill("Roar", "AttackTitan")
 end)
-Section:NewButton("SpinSlash", "Test", function()
-local args = {
-	[1] = "SpinSlash",
-	[2] = workspace.qoexjsz,
-	[3] = "AttackTitan",
-	[4] = "Michael",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ GroundSpikes", "", function()
+    UseSkill("GroundSpikes", "WarhammerTitan")
 end)
-Section:NewButton("Roar", "Test", function()
-local args = {
-	[1] = "Roar",
-	[2] = workspace.qoexjsz,
-	[3] = "AttackTitan",
-	[4] = "Michael",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ Heal", "", function()
+    UseSkill("Heal", "AttackTitan")
 end)
-Section:NewButton("Gspike", "Test", function()
-local args = {
-	[1] = "GroundSpikes",
-	[2] = workspace.qoexjsz,
-	[3] = "WarhammerTitan",
-	[4] = "LaraT",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ StackSteam", "", function()
+    UseSkill("StackSteam", "AttackTitan")
 end)
-Section:NewButton("ErenY", "Test", function()
-workspace.qoexjsz.FormValue.Value = "ErenY"
+
+Section:NewButton("ใช้ Hardening", "", function()
+    UseSkill("Hardening", "AttackTitan")
 end)
-Section:NewButton("Hockey", "Test", function()
-workspace.qoexjsz.FormValue.Value = "Hockey"
+
+Section:NewButton("ใช้ RockThrow", "", function()
+    UseSkill("RockThrow", "BeastTitan")
 end)
-Section:NewButton("Berserk", "Test", function()
-local args = {
-	[1] = "Berserk",
-	[2] = workspace.qoexjsz,
-	[3] = "AttackTitan",
-	[4] = "Michael",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ LongRangedGroundSpike", "", function()
+    UseSkill("LongRangedGroundSpike", "WarhammerTitan")
 end)
-Section:NewButton("Stomp", "Test", function()
-local args = {
-	[1] = "Stomp",
-	[2] = workspace.qoexjsz,
-	[3] = "AttackTitan",
-	[4] = "Michael",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
-end)
-Section:NewButton("RockThrow", "Test", function()
-local args = {
-	[1] = "RockThrow",
-	[2] = workspace.qoexjsz,
-	[3] = "AttackTitan",
-	[4] = "Michael",
-}
-game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
+
+Section:NewButton("ใช้ Stomp", "", function()
+    UseSkill("Stomp", "WarhammerTitan")
 end)
