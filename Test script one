@@ -99,17 +99,3 @@ end)
 Section:NewButton("ใช้ Stomp", "", function()
     UseSkill("Stomp", "WarhammerTitan")
 end)
-Section:NewButton("ใช้ Shift", "", function()
-
-    local target = Players:FindFirstChild(selectedPlayer)
-
-    local args = {
-        [1] = "Shift",
-        [2] = target and target.Character,
-        [3] = "MindlessTitan",
-        [4] = "1",
-    }
-
-    game:GetService("ReplicatedStorage").Main:FireServer(unpack(args))
-
-end)
