@@ -1,6 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NICKISBAD/Nick-s-Modded-KAVO-Lib/main/Nick'sModdedKavoLib.lua"))()
 
-local Window = Library.CreateLib("Control Player UI", "DarkTheme")
+local Window = Library.CreateLib("Control Player UI", "BloodTheme")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Control")
 
