@@ -23,32 +23,6 @@ selectedPlayer = option
 print("เลือก:", selectedPlayer)
 
 end)
-local selectedPlayer = nil
-    local list = {}
-
-    for _, p in pairs(game:GetService("Players"):GetPlayers()) do
-        if p ~= game.Players.LocalPlayer then
-            table.insert(list, p.Name)
-        end
-    end
-
-    return list
-end
-
-local Dropdown = Section:NewDropdown(
-    "เลือกผู้เล่น",
-    "เลือกเป้าหมาย",
-    GetPlayersList(),
-    function(option)
-        selectedPlayer = option
-        print(option)
-    end
-)
-
--- ปุ่มรีชื่อ
-Section:NewButton("รีชื่อผู้เล่น", "รีเฟรชรายชื่อ", function()
-    Dropdown:Refresh(GetPlayersList())
-end)
 Section:NewButton("ใช้ Tackle ใส่เป้าหมาย", "กดเพื่อโจมตี", function()
 
 if not selectedPlayer then  
