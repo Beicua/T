@@ -5,25 +5,6 @@ local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Control")
 local Players = game:GetService("Players")
 local selectedPlayer = nil
-local function GetPlayersList()
-local list = {}
-
-for _, p in pairs(Players:GetPlayers()) do  
-    if p ~= Players.LocalPlayer then  
-        table.insert(list, p.Name)  
-    end  
-end  
-
-return list
-
-end
-Section:NewDropdown("เลือกผู้เล่น", "เลือกเป้าหมาย", GetPlayersList(), function(option)
-
-selectedPlayer = option  
-print("เลือก:", selectedPlayer)
-
-end)
-local function GetPlayersList()
     local list = {}
 
     for _, p in pairs(game:GetService("Players"):GetPlayers()) do
