@@ -1,9 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "BlockStart UI",
+   Name = "Control UI",
    LoadingTitle = "Loading...",
-   LoadingSubtitle = "Clean Panel",
+   LoadingSubtitle = "Tester script",
    ConfigurationSaving = { Enabled = false },
    Theme = "Blue"
 })
