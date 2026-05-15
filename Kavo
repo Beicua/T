@@ -241,3 +241,44 @@ Tab:CreateToggle({
         end
    end,
 })
+-- ======================
+-- ⚡ SPECIAL
+-- ======================
+
+local specialLoop = false
+
+local function FireSpecial()
+    pcall(function()
+        local remote = workspace[Players.LocalPlayer.Name].RemoteEvent
+
+        remote:FireServer("Special", 8)
+        task.wait(0.05)
+        remote:FireServer("SpecialHitbox", 4.212499380111694)
+        task.wait(0.05)
+        remote:FireServer("SpecialBeamEnd", 1.1291618347167969)
+    end)
+end
+
+Tab:CreateButton({
+   Name = "Special",
+   Callback = function()
+        FireSpecial()
+   end,
+})
+
+Tab:CreateToggle({
+   Name = "Special Loop",
+   CurrentValue = false,
+   Callback = function(v)
+        specialLoop = v
+
+        if v then
+            task.spawn(function()
+                while specialLoop do
+                    FireSpecial()
+                    task.wait(0.2)
+                end
+            end)
+        end
+   end,
+})
