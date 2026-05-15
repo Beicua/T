@@ -282,3 +282,47 @@ Tab:CreateToggle({
         end
    end,
 })
+-- ======================
+-- 🛡️ AUTO NEAR BLOCK
+-- ======================
+
+local nearBlock = false
+local nearDistance = 5
+
+local function GetRoot(plr)
+    local char = workspace:FindFirstChild(plr.Name)
+    if not char then return nil end
+    return char:FindFirstChild("HumanoidRootPart")
+end
+
+local function IsNear(plr)
+    local myRoot = GetRoot(LocalPlayer)
+    local targetRoot = GetRoot(plr)
+
+    if not myRoot or not targetRoot then
+        return false
+    end
+
+    return (myRoot.Position - targetRoot.Position).Magnitude <= nearDistance
+end
+
+Tab:CreateToggle({
+   Name = "Auto Near Block",
+   CurrentValue = false,
+   Callback = function(v)
+        nearBlock = v
+
+        if v then
+            task.spawn(function()
+                while nearBlock do
+                    for _, p in pairs(Players:GetPlayers()) do
+                        if p ~= LocalPlayer and IsNear(p) then
+                            FireBlock(p.Name)
+                        end
+                    end
+                    task.wait(0.1)
+                end
+            end)
+        end
+   end,
+})
