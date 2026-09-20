@@ -19,11 +19,13 @@ local LocalPlayer = Players.LocalPlayer
 
 local function GetPlayersList()
     local list = {"All", "Yourself"}
+
     for _, p in pairs(Players:GetPlayers()) do
         if p ~= LocalPlayer then
             table.insert(list, p.Name)
         end
     end
+
     return list
 end
 
@@ -49,12 +51,74 @@ local dropdown = Tab:CreateDropdown({
    end,
 })
 
+-- ======================
+-- 👣 FOOTSTEP
+-- ======================
+
+local foot = "All"
+local footLoop = false
+
+local function FireFoot(name, side)
+    pcall(function()
+        game:GetService("ReplicatedStorage").Remotes.RunEffect:FireServer(
+            "Global",
+            "Footstep",
+            workspace[name],
+            side,
+            Enum.Material.Mud
+        )
+    end)
+end
+
+local footDropdown = Tab:CreateDropdown({
+   Name = "Footstep Player",
+   Options = GetPlayersList(),
+   CurrentOption = {"All"},
+   Callback = function(v)
+        foot = v[1]
+   end,
+})
+
+-- ======================
+-- 🦁 ROAR
+-- ======================
+
+local roar = "All"
+local roarLoop = false
+
+local function FireRoar(name)
+    pcall(function()
+        workspace[name].RemoteEvent:FireServer("Roar1", 9999)
+    end)
+end
+
+local roarDropdown = Tab:CreateDropdown({
+   Name = "Roar Player",
+   Options = GetPlayersList(),
+   CurrentOption = {"All"},
+   Callback = function(v)
+        roar = v[1]
+   end,
+})
+
+-- ======================
+-- 🔄 REFRESH ALL NAMES
+-- ======================
+
 Tab:CreateButton({
    Name = "Refresh Names",
    Callback = function()
-        dropdown:Refresh(GetPlayersList())
+        local names = GetPlayersList()
+
+        dropdown:Refresh(names)
+        footDropdown:Refresh(names)
+        roarDropdown:Refresh(names)
    end,
 })
+
+-- ======================
+-- 🔥 BLOCK LOOP
+-- ======================
 
 Tab:CreateToggle({
    Name = "BlockStart Loop",
@@ -87,32 +151,8 @@ Tab:CreateToggle({
 })
 
 -- ======================
--- 👣 FOOTSTEP
+-- 👣 FOOTSTEP LOOP
 -- ======================
-
-local foot = "All"
-local footLoop = false
-
-local function FireFoot(name, side)
-    pcall(function()
-        game:GetService("ReplicatedStorage").Remotes.RunEffect:FireServer(
-            "Global",
-            "Footstep",
-            workspace[name],
-            side,
-            Enum.Material.Mud
-        )
-    end)
-end
-
-Tab:CreateDropdown({
-   Name = "Footstep Player",
-   Options = GetPlayersList(),
-   CurrentOption = {"All"},
-   Callback = function(v)
-        foot = v[1]
-   end,
-})
 
 Tab:CreateToggle({
    Name = "Footstep Loop",
@@ -146,26 +186,8 @@ Tab:CreateToggle({
 })
 
 -- ======================
--- 🦁 ROAR
+-- 🦁 ROAR LOOP
 -- ======================
-
-local roar = "All"
-local roarLoop = false
-
-local function FireRoar(name)
-    pcall(function()
-        workspace[name].RemoteEvent:FireServer("Roar1", 9999)
-    end)
-end
-
-Tab:CreateDropdown({
-   Name = "Roar Player",
-   Options = GetPlayersList(),
-   CurrentOption = {"All"},
-   Callback = function(v)
-        roar = v[1]
-   end,
-})
 
 Tab:CreateToggle({
    Name = "Roar Loop",
@@ -203,6 +225,7 @@ local highlight = false
 
 local function apply(p)
     if p == LocalPlayer then return end
+
     local c = p.Character
     if not c or c:FindFirstChild("HL") then return end
 
@@ -241,6 +264,7 @@ Tab:CreateToggle({
         end
    end,
 })
+
 -- ======================
 -- ⚡ SPECIAL
 -- ======================
@@ -282,6 +306,7 @@ Tab:CreateToggle({
         end
    end,
 })
+
 -- ======================
 -- 🛡️ AUTO NEAR BLOCK
 -- ======================
@@ -292,6 +317,7 @@ local nearDistance = 5
 local function GetRoot(plr)
     local char = workspace:FindFirstChild(plr.Name)
     if not char then return nil end
+
     return char:FindFirstChild("HumanoidRootPart")
 end
 
@@ -320,7 +346,8 @@ Tab:CreateToggle({
                             FireBlock(p.Name)
                         end
                     end
-                    task.wait(0.1)
+
+                    task.wait(3)
                 end
             end)
         end
