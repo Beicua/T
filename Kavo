@@ -312,14 +312,12 @@ Tab:CreateToggle({
 -- ======================
 
 local nearBlock = false
-local nearDistance = 60
-local notifiedPlayers = {}
+local nearDistance = 70
+local activePlayers = {}
 
 local function GetRoot(plr)
     local char = workspace:FindFirstChild(plr.Name)
-    if not char then
-        return nil
-    end
+    if not char then return nil end
 
     return char:FindFirstChild("HumanoidRootPart")
 end
@@ -335,6 +333,31 @@ local function IsNear(plr)
     return (myRoot.Position - targetRoot.Position).Magnitude <= nearDistance
 end
 
+local function BlockStart(plr)
+    local char = workspace:FindFirstChild(plr.Name)
+    if not char then return end
+
+    local remote = char:FindFirstChild("RemoteEvent")
+    if not remote then return end
+
+    remote:FireServer("BlockStart")
+end
+
+local function BlockStop(plr)
+    local char = workspace:FindFirstChild(plr.Name)
+    if not char then return end
+
+    local remote = char:FindFirstChild("RemoteEvent")
+    if not remote then return end
+
+    local args = {
+        [1] = "BlockStop",
+        n = 1,
+    }
+
+    remote:FireServer(unpack(args, 1, args.n or #args))
+end
+
 Tab:CreateToggle({
     Name = "Auto Near Block",
     CurrentValue = false,
@@ -343,7 +366,11 @@ Tab:CreateToggle({
         nearBlock = v
 
         if not v then
-            notifiedPlayers = {}
+            for name, plr in pairs(activePlayers) do
+                BlockStop(plr)
+            end
+
+            activePlayers = {}
             return
         end
 
@@ -355,25 +382,29 @@ Tab:CreateToggle({
 
                         if IsNear(p) then
 
-                            -- 🛡️ Block
-                            FireBlock(p.Name)
+                            if not activePlayers[p.Name] then
+                                activePlayers[p.Name] = p
 
-                            -- 🔔 แจ้งเตือนครั้งเดียว
-                            if not notifiedPlayers[p.Name] then
-                                notifiedPlayers[p.Name] = true
+                                BlockStart(p)
 
                                 Rayfield:Notify({
-                                    Title = "🛡️ Auto Near Block",
+                                    Title = "Auto Near Block",
                                     Content = "Blocking: " .. p.Name,
                                     Duration = 2
                                 })
                             end
 
-                        else
-                            -- ออกจากระยะแล้ว
-                            notifiedPlayers[p.Name] = nil
-                        end
+                        elseif activePlayers[p.Name] then
 
+                            activePlayers[p.Name] = nil
+                            BlockStop(p)
+
+                            Rayfield:Notify({
+                                Title = "Auto Near Block",
+                                Content = "Block stopped: " .. p.Name,
+                                Duration = 2
+                            })
+                        end
                     end
                 end
 
