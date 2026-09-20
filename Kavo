@@ -312,11 +312,14 @@ Tab:CreateToggle({
 -- ======================
 
 local nearBlock = false
-local nearDistance = 5
+local nearDistance = 60
+local notifiedPlayers = {}
 
 local function GetRoot(plr)
     local char = workspace:FindFirstChild(plr.Name)
-    if not char then return nil end
+    if not char then
+        return nil
+    end
 
     return char:FindFirstChild("HumanoidRootPart")
 end
@@ -333,23 +336,49 @@ local function IsNear(plr)
 end
 
 Tab:CreateToggle({
-   Name = "Auto Near Block",
-   CurrentValue = false,
-   Callback = function(v)
+    Name = "Auto Near Block",
+    CurrentValue = false,
+
+    Callback = function(v)
         nearBlock = v
 
-        if v then
-            task.spawn(function()
-                while nearBlock do
-                    for _, p in pairs(Players:GetPlayers()) do
-                        if p ~= LocalPlayer and IsNear(p) then
-                            FireBlock(p.Name)
-                        end
-                    end
-
-                    task.wait(3)
-                end
-            end)
+        if not v then
+            notifiedPlayers = {}
+            return
         end
-   end,
+
+        task.spawn(function()
+            while nearBlock do
+
+                for _, p in pairs(Players:GetPlayers()) do
+                    if p ~= LocalPlayer then
+
+                        if IsNear(p) then
+
+                            -- 🛡️ Block
+                            FireBlock(p.Name)
+
+                            -- 🔔 แจ้งเตือนครั้งเดียว
+                            if not notifiedPlayers[p.Name] then
+                                notifiedPlayers[p.Name] = true
+
+                                Rayfield:Notify({
+                                    Title = "🛡️ Auto Near Block",
+                                    Content = "Blocking: " .. p.Name,
+                                    Duration = 2
+                                })
+                            end
+
+                        else
+                            -- ออกจากระยะแล้ว
+                            notifiedPlayers[p.Name] = nil
+                        end
+
+                    end
+                end
+
+                task.wait(0.1)
+            end
+        end)
+    end,
 })
