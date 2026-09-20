@@ -218,51 +218,167 @@ Tab:CreateToggle({
 })
 
 -- ======================
--- 🔴 HIGHLIGHT
+-- 👁️ HIGHLIGHT PLAYERS
 -- ======================
 
-local highlight = false
+local highlightEnabled = false
+local highlights = {}
 
-local function apply(p)
-    if p == LocalPlayer then return end
+local function GetValue(character, name)
+    local obj = character:FindFirstChild(name)
 
-    local c = p.Character
-    if not c or c:FindFirstChild("HL") then return end
+    if obj and obj:IsA("ValueBase") then
+        return obj.Value
+    end
 
-    local h = Instance.new("Highlight")
-    h.Name = "HL"
-    h.FillColor = Color3.fromRGB(255,0,0)
-    h.OutlineColor = Color3.fromRGB(255,255,255)
-    h.Parent = c
+    local attr = character:GetAttribute(name)
+    if attr ~= nil then
+        return attr
+    end
+
+    return 0
 end
 
-local function clear()
-    for _, p in pairs(Players:GetPlayers()) do
-        if p.Character and p.Character:FindFirstChild("HL") then
-            p.Character.HL:Destroy()
+local function GetRoot(plr)
+    local character = workspace:FindFirstChild(plr.Name)
+    if not character then return nil end
+
+    return character:FindFirstChild("HumanoidRootPart")
+end
+
+local function CreatePlayerESP(plr)
+    local character = workspace:FindFirstChild(plr.Name)
+    if not character then return end
+
+    local head = character:FindFirstChild("Head")
+    if not head then return end
+
+    -- Highlight
+    local highlight = Instance.new("Highlight")
+    highlight.Name = "PlayerHighlight"
+    highlight.FillTransparency = 0.5
+    highlight.OutlineTransparency = 0
+    highlight.Parent = character
+
+    -- ข้อความบนหัว
+    local billboard = Instance.new("BillboardGui")
+    billboard.Name = "PlayerInfo"
+    billboard.Adornee = head
+    billboard.Size = UDim2.new(0, 180, 0, 85)
+    billboard.StudsOffset = Vector3.new(0, 3, 0)
+    billboard.AlwaysOnTop = true
+    billboard.Parent = head
+
+    local label = Instance.new("TextLabel")
+    label.Name = "Info"
+    label.Size = UDim2.fromScale(1, 1)
+    label.BackgroundTransparency = 1
+    label.TextColor3 = Color3.new(1, 1, 1)
+    label.TextStrokeTransparency = 0
+    label.TextScaled = true
+    label.Font = Enum.Font.SourceSansBold
+    label.Parent = billboard
+
+    highlights[plr.Name] = {
+        Highlight = highlight,
+        Billboard = billboard,
+        Label = label,
+        Character = character
+    }
+end
+
+local function RemovePlayerESP(plr)
+    local data = highlights[plr.Name]
+
+    if data then
+        if data.Highlight then
+            data.Highlight:Destroy()
+        end
+
+        if data.Billboard then
+            data.Billboard:Destroy()
+        end
+
+        highlights[plr.Name] = nil
+    end
+end
+
+local function UpdateESP()
+    local myRoot = GetRoot(LocalPlayer)
+    if not myRoot then return end
+
+    for _, plr in ipairs(Players:GetPlayers()) do
+        if plr ~= LocalPlayer then
+
+            local data = highlights[plr.Name]
+            local character = workspace:FindFirstChild(plr.Name)
+
+            if data and character then
+                local targetRoot = character:FindFirstChild("HumanoidRootPart")
+
+                if targetRoot then
+                    -- คำนวณระยะเป็น studs
+                    local distance =
+                        (myRoot.Position - targetRoot.Position).Magnitude
+
+                    local ultimate = GetValue(character, "Ultimate")
+                    local blockStam = GetValue(character, "BlockStam")
+
+                    data.Label.Text =
+                        plr.Name ..
+                        "\nUltimate: " .. tostring(ultimate) ..
+                        "\nBlockStam: " .. tostring(blockStam) ..
+                        "\nDistance: " .. math.floor(distance) .. " studs"
+                end
+            end
         end
     end
 end
 
 Tab:CreateToggle({
-   Name = "Highlight Players",
-   CurrentValue = false,
-   Callback = function(v)
-        highlight = v
+    Name = "Highlight Players",
+    CurrentValue = false,
 
-        if v then
-            task.spawn(function()
-                while highlight do
-                    for _, p in pairs(Players:GetPlayers()) do
-                        apply(p)
-                    end
-                    task.wait(0.5)
-                end
-            end)
-        else
-            clear()
+    Callback = function(v)
+        highlightEnabled = v
+
+        if not v then
+            for _, plr in ipairs(Players:GetPlayers()) do
+                RemovePlayerESP(plr)
+            end
+
+            table.clear(highlights)
+            return
         end
-   end,
+
+        for _, plr in ipairs(Players:GetPlayers()) do
+            if plr ~= LocalPlayer then
+                CreatePlayerESP(plr)
+            end
+        end
+
+        task.spawn(function()
+            while highlightEnabled do
+
+                -- เพิ่มผู้เล่นใหม่ที่เข้ามา
+                for _, plr in ipairs(Players:GetPlayers()) do
+                    if plr ~= LocalPlayer then
+
+                        local character = workspace:FindFirstChild(plr.Name)
+
+                        if character and not highlights[plr.Name] then
+                            CreatePlayerESP(plr)
+                        end
+                    end
+                end
+
+                -- อัปเดตข้อมูล
+                UpdateESP()
+
+                task.wait(0.1)
+            end
+        end)
+    end,
 })
 
 -- ======================
@@ -350,12 +466,7 @@ local function BlockStop(plr)
     local remote = char:FindFirstChild("RemoteEvent")
     if not remote then return end
 
-    local args = {
-        [1] = "BlockStop",
-        n = 1,
-    }
-
-    remote:FireServer(unpack(args, 1, args.n or #args))
+    remote:FireServer("BlockStop")
 end
 
 Tab:CreateToggle({
@@ -366,36 +477,27 @@ Tab:CreateToggle({
         nearBlock = v
 
         if not v then
-            for name, plr in pairs(activePlayers) do
+            for _, plr in pairs(activePlayers) do
                 BlockStop(plr)
             end
 
-            activePlayers = {}
+            table.clear(activePlayers)
             return
         end
 
         task.spawn(function()
             while nearBlock do
 
-                for _, p in pairs(Players:GetPlayers()) do
+                for _, p in ipairs(Players:GetPlayers()) do
                     if p ~= LocalPlayer then
 
                         if IsNear(p) then
-
-                            if not activePlayers[p.Name] then
-                                activePlayers[p.Name] = p
-
-                                BlockStart(p)
-
-                                Rayfield:Notify({
-                                    Title = "Auto Near Block",
-                                    Content = "Blocking: " .. p.Name,
-                                    Duration = 2
-                                })
-                            end
+                            -- อยู่ในระยะ 70 → ยิง Start ซ้ำเรื่อย ๆ
+                            activePlayers[p.Name] = p
+                            BlockStart(p)
 
                         elseif activePlayers[p.Name] then
-
+                            -- พ้น 70 → Stop
                             activePlayers[p.Name] = nil
                             BlockStop(p)
 
@@ -405,6 +507,7 @@ Tab:CreateToggle({
                                 Duration = 2
                             })
                         end
+
                     end
                 end
 
