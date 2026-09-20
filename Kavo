@@ -415,7 +415,7 @@ Tab:CreateToggle({
 -- ======================
 
 local nearBlock = false
-local nearDistance = 70
+local nearDistance = 45
 local activePlayers = {}
 
 local function GetRoot(plr)
@@ -457,7 +457,7 @@ local function BlockStop(plr)
 end
 
 Tab:CreateToggle({
-    Name = "Auto Near Block dis70",
+    Name = "Auto Near Block dis45",
     CurrentValue = false,
 
     Callback = function(v)
@@ -490,7 +490,7 @@ Tab:CreateToggle({
 
                             Rayfield:Notify({
                                 Title = "Auto Near Block",
-                                Content = "Block stopped: " .. p.Name,
+                                Content = "Block outnow: " .. p.Name,
                                 Duration = 2
                             })
                         end
