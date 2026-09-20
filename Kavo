@@ -359,7 +359,7 @@ local function BlockStop(plr)
 end
 
 Tab:CreateToggle({
-    Name = "Auto Near Block",
+    Name = "Auto Near Block dis70",
     CurrentValue = false,
 
     Callback = function(v)
