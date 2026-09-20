@@ -253,14 +253,12 @@ local function CreatePlayerESP(plr)
     local head = character:FindFirstChild("Head")
     if not head then return end
 
-    -- Highlight
     local highlight = Instance.new("Highlight")
     highlight.Name = "PlayerHighlight"
     highlight.FillTransparency = 0.5
     highlight.OutlineTransparency = 0
     highlight.Parent = character
 
-    -- ข้อความบนหัว
     local billboard = Instance.new("BillboardGui")
     billboard.Name = "PlayerInfo"
     billboard.Adornee = head
@@ -282,8 +280,7 @@ local function CreatePlayerESP(plr)
     highlights[plr.Name] = {
         Highlight = highlight,
         Billboard = billboard,
-        Label = label,
-        Character = character
+        Label = label
     }
 end
 
@@ -303,38 +300,6 @@ local function RemovePlayerESP(plr)
     end
 end
 
-local function UpdateESP()
-    local myRoot = GetRoot(LocalPlayer)
-    if not myRoot then return end
-
-    for _, plr in ipairs(Players:GetPlayers()) do
-        if plr ~= LocalPlayer then
-
-            local data = highlights[plr.Name]
-            local character = workspace:FindFirstChild(plr.Name)
-
-            if data and character then
-                local targetRoot = character:FindFirstChild("HumanoidRootPart")
-
-                if targetRoot then
-                    -- คำนวณระยะเป็น studs
-                    local distance =
-                        (myRoot.Position - targetRoot.Position).Magnitude
-
-                    local ultimate = GetValue(character, "Ultimate")
-                    local blockStam = GetValue(character, "BlockStam")
-
-                    data.Label.Text =
-                        plr.Name ..
-                        "\nUltimate: " .. tostring(ultimate) ..
-                        "\nBlockStam: " .. tostring(blockStam) ..
-                        "\nDistance: " .. math.floor(distance) .. " studs"
-                end
-            end
-        end
-    end
-end
-
 Tab:CreateToggle({
     Name = "Highlight Players",
     CurrentValue = false,
@@ -351,30 +316,52 @@ Tab:CreateToggle({
             return
         end
 
-        for _, plr in ipairs(Players:GetPlayers()) do
-            if plr ~= LocalPlayer then
-                CreatePlayerESP(plr)
-            end
-        end
-
+        -- 🔄 LOOP เช็กตลอด
         task.spawn(function()
             while highlightEnabled do
 
-                -- เพิ่มผู้เล่นใหม่ที่เข้ามา
                 for _, plr in ipairs(Players:GetPlayers()) do
                     if plr ~= LocalPlayer then
 
                         local character = workspace:FindFirstChild(plr.Name)
 
+                        -- สร้าง ESP ถ้ายังไม่มี
                         if character and not highlights[plr.Name] then
                             CreatePlayerESP(plr)
+                        end
+
+                        local data = highlights[plr.Name]
+
+                        if data and character then
+                            local myRoot = GetRoot(LocalPlayer)
+                            local targetRoot = GetRoot(plr)
+
+                            if myRoot and targetRoot then
+
+                                -- 📏 ระยะห่าง
+                                local distance =
+                                    (myRoot.Position - targetRoot.Position).Magnitude
+
+                                -- 📊 ค่า
+                                local ultimate =
+                                    GetValue(character, "Ultimate")
+
+                                local blockStam =
+                                    GetValue(character, "BlockStam")
+
+                                -- 📝 อัปเดตข้อความ
+                                data.Label.Text =
+                                    plr.Name ..
+                                    "\nUltimate: " .. tostring(ultimate) ..
+                                    "\nBlockStam: " .. tostring(blockStam) ..
+                                    "\nDistance: " ..
+                                    math.floor(distance) .. " studs"
+                            end
                         end
                     end
                 end
 
-                -- อัปเดตข้อมูล
-                UpdateESP()
-
+                -- 🔄 เช็กใหม่ทุก 0.1 วินาที
                 task.wait(0.1)
             end
         end)
