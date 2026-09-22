@@ -415,7 +415,7 @@ Tab:CreateToggle({
 -- ======================
 
 local nearBlock = false
-local nearDistance = 45
+local nearDistance = 30
 local activePlayers = {}
 
 local function GetRoot(plr)
