@@ -403,7 +403,7 @@ Tab:CreateToggle({
             task.spawn(function()
                 while specialLoop do
                     FireSpecial()
-                    task.wait(0.2)
+                    task.wait(4)
                 end
             end)
         end
